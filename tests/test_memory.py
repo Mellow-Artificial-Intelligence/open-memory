@@ -21,4 +21,3 @@ def test_search_exact_no_flags():
     mem = TextMemory("Foo foo")
     matches = mem.search_matches(r"foo")
     assert [m.text for m in matches] == ["foo"]
-

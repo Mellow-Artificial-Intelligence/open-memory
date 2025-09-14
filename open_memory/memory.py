@@ -55,11 +55,15 @@ class TextMemory:
                 break
         return results
 
-    def search(self, pattern: str | Pattern[str], *, flags: int = 0, limit: Optional[int] = None) -> List[str]:
+    def search(
+        self,
+        pattern: str | Pattern[str],
+        *,
+        flags: int = 0,
+        limit: Optional[int] = None,
+    ) -> List[str]:
         """Convenience: return matched substrings only."""
         return [m.text for m in self.search_matches(pattern, flags=flags, limit=limit)]
 
 
 __all__ = ["TextMemory", "MatchResult"]
-
-
