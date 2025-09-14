@@ -1,0 +1,14 @@
+flowchart TD
+  L[LLM]
+  R[Regex + Flags + Search]
+  M[Memory Layer]
+  D{Matches found?}
+  I[Inject extracted memory into messages]
+  F[LLM Final Response]
+  L --> R
+  R --> M
+  M --> D
+  D -- No --> F
+  D -- Yes --> I
+  I --> F
+

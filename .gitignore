@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.pyo
+*.pyd
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Application data (markdown files and metadata)
+data/
+
+# Test files
+test_api.py
+
+# Coverage and test cache
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editors/OS
+.DS_Store
+.idea/
+.vscode/
+
+# Local backups
+.git_backup_*
+

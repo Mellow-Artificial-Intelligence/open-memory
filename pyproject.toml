@@ -1,0 +1,27 @@
+[project]
+name = "open-memory"
+version = "0.1.0"
+description = "Deterministic, regex-driven memory layer for LLMs over external text corpora"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+#[project.scripts]
+# open-memory = "open_memory.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["open_memory"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
