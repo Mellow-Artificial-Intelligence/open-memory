@@ -4,7 +4,7 @@ A deterministic, regex-driven memory layer for LLMs. It emphasizes precise retri
 
 ## TextMemory (Regex-based LLM memory layer)
 
-![Diagram](diagrams/memory.png)
+<img src="diagrams/memory.png" alt="Diagram" width="400">
 
 ### How it works
 
